@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import path
+import sys
 
 # Title and description
 st.title("Regression Model Inference")
@@ -10,12 +12,23 @@ st.markdown("""
 """)
 
 # Placeholder for model path
-model_path = "D:\cowpea_yield_app\cowpea_yield_project\cowpea_yield\models\yield_model.pkl"  # Replace with your model's path
+#model_path = "D:\cowpea_yield_app\cowpea_yield_project\cowpea_yield\models\yield_model.pkl"  # Replace with your model's path
+
+
 
 # Load the model
 def load_model(path):
     try:
-        model = joblib.load(path)
+        dir = path.Path(__file__)
+     
+        sys.path.append(dir.parent.parent)
+        
+        # load model
+        path_to_model = './models/yield_model.pkl'
+        
+        with open(path_to_model, 'rb') as file:
+            model = joblib.load(file)
+         
         st.success("Model loaded successfully!")
         return model
     except Exception as e:
