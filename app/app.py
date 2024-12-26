@@ -17,7 +17,7 @@ st.markdown("""
 
 
 # Load the model
-def load_model(path = None):
+def load_model():
     try:
         dir = path.Path(__file__)
      
