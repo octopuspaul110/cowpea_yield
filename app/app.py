@@ -6,7 +6,7 @@ import path
 import sys
 
 # Title and description
-st.title("Regression Model Inference")
+st.title("Cowpea Yield Predictor")
 st.markdown("""
  Please ensure the data format matches the required features: GID, PLOTNO, STAND, and SEEDS. 
 """)
