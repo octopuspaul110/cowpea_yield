@@ -17,7 +17,7 @@ st.markdown("""
 
 
 # Load the model
-def load_model(path):
+def load_model(path = None):
     try:
         dir = path.Path(__file__)
      
@@ -35,7 +35,7 @@ def load_model(path):
         st.error(f"Error loading model: {e}")
         return None
 
-model = load_model(model_path)
+model = load_model()
 
 # Input data for inference
 st.header("Input Data")
