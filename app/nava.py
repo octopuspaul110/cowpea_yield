@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title and description
-st.title("AI powered Cowpea Management System")
+st.title(""AI-Powered Integrated Cowpea management system for Nigerian Farmers".")
 st.markdown("""
 This dashboard allows you to navigate to different Ai powered application for Cowpea management system.
 """)
