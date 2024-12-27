@@ -8,7 +8,7 @@ st.title("AI-Powered Integrated Cowpea management system for Nigerian Farmers.")
 dir = path.Path(__file__)
 sys.path.append(dir.parent.parent)
 
-image_path = "./app/cowpea_images.png"  # Replace with the actual path to your image
+image_path = "./app/cowpea_images.jpeg"  # Replace with the actual path to your image
 try:
     image = Image.open(image_path)
     st.image(image, caption="Cowpea Yield", use_column_width=True)
