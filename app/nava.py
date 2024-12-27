@@ -11,7 +11,7 @@ sys.path.append(dir.parent.parent)
 image_path = "./app/cowpea_images.jpeg"  # Replace with the actual path to your image
 try:
     image = Image.open(image_path)
-    st.image(image, caption="Cowpea Yield", use_column_width=True)
+    st.image(image, caption="Cowpea Yield", use_container_width=True)
 except FileNotFoundError:
     st.error("Image file not found. Please ensure the file path is correct.")
     
