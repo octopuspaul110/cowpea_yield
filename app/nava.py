@@ -1,9 +1,20 @@
 import streamlit as st
 import path
 import sys
+import PIL
 
 # Title and description
 st.title("AI-Powered Integrated Cowpea management system for Nigerian Farmers.")
+dir = path.Path(__file__)
+sys.path.append(dir.parent.parent)
+
+image_path = "./app/cowpea_images.png"  # Replace with the actual path to your image
+try:
+    image = Image.open(image_path)
+    st.image(image, caption="Cowpea Yield", use_column_width=True)
+except FileNotFoundError:
+    st.error("Image file not found. Please ensure the file path is correct.")
+    
 st.markdown("""
 This dashboard allows you to navigate to different Ai powered application for Cowpea management system.
 """)
@@ -33,8 +44,7 @@ st.markdown("""3.4 App Deployment and Feedback""")
 st.header("Download Report")
 pdf_path = "example_report.pdf"  # Replace with the path to your PDF file
 
-dir = path.Path(__file__)
-sys.path.append(dir.parent.parent)
+
 pdf_path = './app/cowpea_eda_and_model_explanation_file.pdf'
 
 try:
