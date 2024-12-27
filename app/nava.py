@@ -20,13 +20,12 @@ st.markdown("""
 - [Yield Predictor](https://cowpeayield-9extd5lp5lptxwtw3bdmqg.streamlit.app/)  
 """)
 
-st.markdown("""For the app development, the explanation of the exploratory data analysis (EDA) and model development is presented in the sections below
-3.1 Exploratory data analysis of the three datasets
-3.2 Model Development. explanation of the choice of machine learning model.
-There is need to identify and state the features of the datasets that were selected for building the application. The feature engineering approach/method/technique and or algorithm. 
- 
-3.3 Result of model testing
-3.4 App Deployment and Feedback""")
+st.markdown("""For the app development, the explanation of the exploratory data analysis (EDA) and model development is presented in the sections below""")
+st.markdown("""3.1 Exploratory data analysis of the three datasets""")
+st.markdown("""3.2 Model Development. explanation of the choice of machine learning model.""")
+st.markdown("""There is need to identify and state the features of the datasets that were selected for building the application. The feature engineering approach/method/technique and or algorithm.""")
+st.markdown("""Result of model testing""")
+st.markdown("""3.4 App Deployment and Feedback""")
 
 
 # Add a section for PDF download
