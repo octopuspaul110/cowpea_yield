@@ -16,7 +16,7 @@ except FileNotFoundError:
     st.error("Image file not found. Please ensure the file path is correct.")
     
 st.markdown("""
-This dashboard allows you to navigate to different Ai powered application for Cowpea management system.
+This dashboard allows you to navigate the various sections of the Ai powered application for Cowpea management system.
 """)
 st.markdown("""This Application is developed to help farmers monitor growth, pest infestation and predict yield of cowpea in Nigeria.
 The Software consists of three panels.""")
