@@ -1,4 +1,6 @@
 import streamlit as st
+import path
+import sys
 
 # Title and description
 st.title("AI-Powered Integrated Cowpea management system for Nigerian Farmers.")
@@ -30,6 +32,10 @@ st.markdown("""3.4 App Deployment and Feedback""")
 # Add a section for PDF download
 st.header("Download Report")
 pdf_path = "example_report.pdf"  # Replace with the path to your PDF file
+
+dir = path.Path(__file__)
+sys.path.append(dir.parent.parent)
+pdf_path = './app/cowpea_eda_and_model_explanation_file.pdf'
 
 try:
     with open(pdf_path, "rb") as pdf_file:
