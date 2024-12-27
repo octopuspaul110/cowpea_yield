@@ -1,7 +1,7 @@
 import streamlit as st
 import path
 import sys
-import PIL
+from PIL import Image
 
 # Title and description
 st.title("AI-Powered Integrated Cowpea management system for Nigerian Farmers.")
