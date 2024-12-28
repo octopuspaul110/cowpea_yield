@@ -4,6 +4,7 @@ import numpy as np
 import joblib
 import path
 import sys
+from PIL import Image
 
 # Title and description
 st.title("Cowpea Yield Predictor")
