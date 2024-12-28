@@ -7,6 +7,12 @@ import sys
 
 # Title and description
 st.title("Cowpea Yield Predictor")
+image_path = "./app/yield.jpeg"  # Replace with the actual path to your image
+try:
+    image = Image.open(image_path)
+    st.image(image, use_container_width=True)
+except FileNotFoundError:
+    st.error("Image file not found. Please ensure the file path is correct.")
 st.markdown("""
  Please ensure the data format matches the required features: GID, PLOTNO, STAND, and SEEDS. 
 """)
