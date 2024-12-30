@@ -33,10 +33,6 @@ st.markdown("""
 - [Yield Predictor](https://cowpeayield-9extd5lp5lptxwtw3bdmqg.streamlit.app/)  
 """)
 
-st.markdown("""You can download a report on the different applications developed for this management system, this includes EDA(Exploratory Data Analysis),Model Development and so on...""")
-
-
-
 # Add a section for PDF download
 st.header("Download Report")
 pdf_path = "example_report.pdf"  # Replace with the path to your PDF file
@@ -55,5 +51,16 @@ try:
     )
 except FileNotFoundError:
     st.error("PDF file not found. Please ensure the file path is correct.")
+
+import streamlit as st
+
+st.title("Feedback Form")
+st.markdown("We value your feedback. Please click the button below to fill out our feedback form.")
+
+# Add a button to open the form
+if st.button("Open Feedback Form"):
+    form_url = "https://docs.google.com/forms/d/e/1FAIpQLSc569ZHw3OsUJ4PW2dc-tnllUpu0UvrqLCW8ZrRLUise2LKgA/viewform?usp=header"  # Replace with your Google Form URL
+    st.markdown(f"[Click here to open the form]({form_url})", unsafe_allow_html=True)
+
 
 # Optionally, provide a dropdown for navigation
