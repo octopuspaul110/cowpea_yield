@@ -29,7 +29,7 @@ st.markdown("""iii. A section that predict the yield""")
 st.header("Available Apps")
 st.markdown("""
 - [Cowpea Disease Predictor](https://cowpea-project-23ni8gknzgwryhzuhp7kcs.streamlit.app/)  
-- [Treatment Predictor](https://cowpeatreatment-hyb7fw82sltrlwfmiypyjt.streamlit.app/)  
+- [Treatment Recommender](https://cowpeatreatment-hyb7fw82sltrlwfmiypyjt.streamlit.app/)  
 - [Yield Predictor](https://cowpeayield-9extd5lp5lptxwtw3bdmqg.streamlit.app/)  
 """)
 
