@@ -5,6 +5,9 @@ import joblib
 import path
 import sys
 from PIL import Image
+import sqlite
+from sqlalchemy import create_engine
+
 
 # Initialize database connection
 DB_FILE = "app_data.db"
