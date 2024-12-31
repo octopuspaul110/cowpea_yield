@@ -5,8 +5,8 @@ import joblib
 import path
 import sys
 from PIL import Image
-import sqlite
-from sqlalchemy import create_engine
+import sqlite3
+from sqlalchemy import create_engine,text
 
 
 # Initialize database connection
@@ -15,7 +15,7 @@ engine = create_engine(f"sqlite:///{DB_FILE}")
 
 def initialize_db():
     with engine.connect() as conn:
-        conn.execute("""
+        conn.execute(text("""
         CREATE TABLE IF NOT EXISTS predictions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             GID INTEGER,
@@ -24,7 +24,7 @@ def initialize_db():
             SEEDS REAL,
             SEEDKGHA REAL
         );
-        """)
+        """))
 # Save data to database
 def save_to_db(data):
     with engine.connect() as conn:
