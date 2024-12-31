@@ -34,23 +34,23 @@ st.markdown("""
 """)
 
 # Add a section for PDF download
-st.header("Download Report")
-pdf_path = "example_report.pdf"  # Replace with the path to your PDF file
+# st.header("Download Report")
+# pdf_path = "example_report.pdf"  # Replace with the path to your PDF file
 
 
-pdf_path = './app/cowpea_eda_and_model_explanation_file.pdf'
+# pdf_path = './app/cowpea_eda_and_model_explanation_file.pdf'
 
-try:
-    with open(pdf_path, "rb") as pdf_file:
-        pdf_bytes = pdf_file.read()
-    st.download_button(
-        label="Download PDF Report",
-        data=pdf_bytes,
-        file_name="report.pdf",
-        mime="application/pdf",
-    )
-except FileNotFoundError:
-    st.error("PDF file not found. Please ensure the file path is correct.")
+# try:
+#     with open(pdf_path, "rb") as pdf_file:
+#         pdf_bytes = pdf_file.read()
+#     st.download_button(
+#         label="Download PDF Report",
+#         data=pdf_bytes,
+#         file_name="report.pdf",
+#         mime="application/pdf",
+#     )
+# except FileNotFoundError:
+#     st.error("PDF file not found. Please ensure the file path is correct.")
 
 import streamlit as st
 
